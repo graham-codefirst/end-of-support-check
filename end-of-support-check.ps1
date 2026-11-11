@@ -17,7 +17,7 @@
   Run:   powershell -ExecutionPolicy Bypass -File .\end-of-support-check.ps1
   Save:  powershell -ExecutionPolicy Bypass -File .\end-of-support-check.ps1 -CsvPath .\support-status.csv
 
-  Support dates generated on 2026-10-03 from https://www.codefirst.co.uk/end-of-life/
+  Support dates generated on 2026-11-11 from https://www.codefirst.co.uk/end-of-life/
   Check the vendor's own page before relying on a date for a decision.
 #>
 param([string]$CsvPath)
@@ -48,6 +48,7 @@ $dates = @{
   'net-8' = @{ Name = '.NET 8'; End = '2026-11-10'; PaidEnd = $null }
   'net-9' = @{ Name = '.NET 9'; End = '2026-11-10'; PaidEnd = $null }
   'net-10' = @{ Name = '.NET 10'; End = '2028-11-14'; PaidEnd = $null }
+  'net-11' = @{ Name = '.NET 11'; End = '2028-11-14'; PaidEnd = $null }
   'ws-2003' = @{ Name = 'Windows Server 2003'; End = '2015-07-14'; PaidEnd = $null }
   'ws-2008' = @{ Name = 'Windows Server 2008 and 2008 R2'; End = '2020-01-14'; PaidEnd = '2023-01-10' }
   'ws-2012' = @{ Name = 'Windows Server 2012 and 2012 R2'; End = '2023-10-10'; PaidEnd = '2026-10-13' }
